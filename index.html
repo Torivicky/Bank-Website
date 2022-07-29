@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Bank Website</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <link rel="stylesheet" href="style.css"> 
+<link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+<link rel="stylesheet" href="jquery.counterup.min.js">
+ 
+  <!-- owl carousel
+  <link rel="stylesheet" href="https://cdn.jsdeliver.net/npm/remixicon@2.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"> -->
+
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
+<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+</head>
+<body>
+  <header class="header">
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top">  
+  <div class="container-fluid">
+ <a class="navbar-brand" href="#">Unlimited Bank</a>
+ <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+ <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item active">
+<a class="nav-link" href="#">Home</a>
+</li>
+<li class="nav-item active">
+<a class="nav-link" href="about.html">About Us</a>
+</li>
+
+<li nav-item dropdown>
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services</a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" href="#">Online Banking</a>
+ <a class="dropdown-item" href="#">Corporate Banking</a>
+<div class="dropdown-divider"></div>
+<a class="dropdown-item" href="#">Personal Banking</a>
+</div>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#reviews">Testimonies</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#contact">Contact Us</a>
+</li>
+</ul>
+
+<ul class="navbar-nav ml-auto">
+  <a href="account.html"><button class="btn">Open an Account</button></a>
+</ul>
+<!-- <form class="form-inline my-2 my-lg-0">
+<input class="form-control mr-sm-2" type="search" placeholder="search" aria-label="search">
+<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+</form> -->
+</div>
+  </div>
+</nav>
+  </header>
+  <!-----------Carousel------------>
+<div id="carouselExampleIndicators" class="carousel slide bg-cover animated zoomIn" data-ride="carousel">
+<ol class="carousel-indicators">
+<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+<li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+</ol>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<img class="d-block img-fluid" src="./images/slide3.jpg" alt="First slide">
+<div class="carousel-caption">
+<h5 class="animated bounceInRight" style="animation-delay: 1s">The People's Bank of Africa <br> Your <span>Unlimited Bank</span> </h5>
+<p class="text-warning animated bounceInLeft" style="animation-delay: 2s">Enjoy easy and convient access to financial services that are tailored for your needs</p>
+<p class="animated bounceInRight" style="animation-delay:3s;"><a href="#">More Info</a></p>
+</div>
+</div>
+<div class="carousel-item">
+<img class="d-block img-fluid" src="./images/slide2.jpg" alt="Second slide">
+<div class="carousel-caption">
+<h5 class="animated slideInDown" style="animation-delay: 1s;">Out With The Old,<br> In With The Bold, <br> Fast <span>& REALIABLE</span> </h5>
+<p class="text-warning animated fadeInUp" style="animation-delay: 2s;">Bank wherever, whenever, Paybils send and receive money anywhere you are</p>
+<p class="animated zoomIn" style="animation-delay: 3s;"><a href="#">More Info</a></p>
+</div>
+</div>
+   
+<div class="carousel-item">
+<img class="d-block img-fluid" src="./images/cash wow.jpg" alt="Third slide">
+<div class="carousel-caption">
+<h5 class="animated zoomIn" style="animation-delay: 1s;">No Bills No Problems <br> BankingG That <br> <span>SUITS YOU</span> </h5>
+<p class=" text-warning animated fadeInLeft" style="animation-delay:2s;">Banking convenience, Swift, Security and flexibility all in one place.</p>
+<p class="animated zoomIn" style="animation-delay: 3s;"><a href="#">More Info</a></p>
+</div>
+</div>
+<div class="carousel-item">
+<img class="d-block img-fluid" src="./images/cash1.jpg" alt="Fourth slide">
+<div class="carousel-caption">
+<h5 class="  animated bounceInLeft" style="animation-delay: 1s;">Send, Receive and Save Money <br> With <span>UNLIMITED BANK</span> </h5>
+<p class=" text-warning animated zoomIn" style="animation-delay: 2s;">Unlimited bank brings you, your loved ones, and everyone in the world comfort, reliability and faster transaction speed.</p>
+<p class="animated fadeInRight" style="animation-delay: 3s;"><a href="#">More Info</a></p>
+</div>
+</div>
+<div class="carousel-item">
+  <img class="d-block img-fluid" src="./images/bank3.jpg" alt="Third slide">
+  <div class="carousel-caption">
+  <h5 class="animated zoomIn" style="animation-delay: 1s;">Stay Alert, Practice <br> <span>SAFE BANKING</span> </h5>
+  <p class=" text-warning animated fadeInLeft" style="animation-delay:2s;">Beware of fraud. Never share your OTP. <br> Stay Safe, Stay Alert</p>
+  <p class="animated zoomIn" style="animation-delay: 3s;"><a href="#">More Info</a></p>
+  </div>
+  </div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+<span class="sr-only">Previous</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Next</span>
+</a>
+</div>
+
+
+<!-- Services -->
+<section id="services" class="text-center bg-warning">
+<div class="container">
+<div class="row">
+<div class="col-12 section-intro text-center animated fadeInUp">
+<h2>Exclusive range of services to manage Your <span>finance </span>and spendings.</h2>
+<div class="divider"></div>
+<p>Securely you can connect all your bank account and track your spending from a single dashboard, giving you a holistic overview of your expenditure.</p>
+   </div>
+  </div>
+  <div class="row gx-4 gy-6">
+   <div class="col-md-4 feature animated zoomIn">
+<div class="icon"><img src="./images/save money.png" alt=""></div>
+<h3 class="mt-4 mb-3">Savings</h3>
+<p>Unlimited Bank offers savings plans in local currencies; customers will get up to a 20% interest rate per annum on their
+savings, depending on the savings plan they sign up for.</p>
+   </div>
+     <div class="col-md-4 feature animated zoomIn">
+      <div class="icon"><img src="./images/online bank.png" alt=""></div>
+      <h3 class="mt-4 mb-3">Online Banking</h3>
+      <p>Unlimited Bank modern web and mobile applications allow you to keep track of your finances wherever you are in the world </p>
+     </div>
+       <div class="col-md-4 feature animated zoomIn">
+        <div class="icon"><img src="./images/loan.png" alt=""></div>
+        <h3 class="mt-4 mb-3">Loans</h3>
+        <p>Customers of Unlimited Bank will request short-term loans from their app or dashboard. Loans will be approved based on the
+        credit score of the customer.</p>
+       </div>
+         <div class="col-md-4 feature animated zoomIn">
+          <div class="icon"><img src="./images/transfer.png" alt=""></div>
+          <h3 class="mt-4 mb-3">Transfers</h3>
+          <p>Unlimited Bank allows you to transfer money from your balance to other Unlimited users for free and other bank accounts; Get up
+          to 50 free transfers monthly when you send money to other banks.</p>
+         </div>
+           <div class="col-md-4 feature animated zoomIn">
+            <div class="icon"><img src="./images/cards.png" alt=""></div>
+            <h3 class="mt-4 mb-3">Physical & Virtual Cards</h3>
+            <p>Never run out of money; the more you transact, the more you can spend even with lower balances. Customers will have the
+            option of creating virtual naira and dollar cards for their online payment with Unlimited Bank.</p>
+</div>
+<div class="col-md-4 feature animated zoomIn" style="animation-delay: 3s;">
+<div class="icon"><img src="./images/corporate.png" alt=""></div>
+<h3 class="mt-4 mb-3">Corporate Banking</h3>
+<p>Unlimited Bank provides business accounts and other ancillary services to SMEs. As a small business, managing inflows and outflows can be better done from your internet banking.</p>
+</div>
+  </div>
+ </div>
+</section>
+<!--------counters------>
+<section class="bg-cover animated fadeInUp">
+<div class="overlay"></div>
+<div class="container text-white text-center">
+ <div class="row gy-4">
+  <div class="col-md-3">
+   <img class="mt-4 mb-2" src="./images/customers.png" alt="">
+   <h4 class="mt-3 mb-3">250k+</h4>
+   <p>CUSTOMERS</p>
+  </div>
+  <div class="col-md-3">
+   <img class="mt-4 mb-2" src="./images/happy.png" alt="">
+   <h4 class="mt-3 mb-3">200+</h4>
+   <p>HAPPY CLIENTS</p>
+  </div>
+  <div class="col-md-3">
+   <img class="mt-4 mb-2" src="./images/business.png" alt="">
+   <h4 class="mt-3 mb-3">20k+</h4>
+   <p>BUSINESS</p>
+  </div>
+  <div class="col-md-3">
+   <img class="mt-4 mb-2" src="./images/transactions.png" alt="">
+   <h4 class="mt-3 mb-3">30k+</h4>
+   <p>DAILY TRANSACTIONS</p>
+  </div>
+ </div>
+</div>
+</section>
+<!-------Testimonials-------->
+<section id="reviews"  class="text-center bg-light">
+<div class="container">
+<div class="row">
+  <div class="col-12 section-intro text-center animated fadeInUp">
+  <h4 class="h2">Customers Testimonies</h4>
+  <div class="divider"></div>
+  <p>It is a long establish fact that a reader will be distracted by the readable content</p>
+  </div>
+</div>
+<div class="row gx-4 gy-5 text-start">
+  <div class="col-md-4 animated fadeInUp">
+   <div class="review p-4">
+    <div class="person">
+      <img src="./images/review5.jpg" alt="">
+      <div class="text ms-3">
+        <h5 class="mb-0 ml-3">John Odoh</h5>
+        <small>Customer</small>
+      </div>
+    </div>
+    <p class="pt-4">there are many variations of bank, but i haven't come accros a bank that gives better banking services as Unlimited bank</p>
+    <div class="stars">
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+      <i class='bx bxs-star'></i>
+    </div>
+   </div> 
+  </div>
+
+  <div class="col-md-4 animated fadeInUp">
+    <div class="review p-4">
+      <div class="person">
+        <img src="./images/review3.jpg" alt="">
+        <div class="text ms-3">
+          <h5 class="mb-0 ml-3">Zina Ade</h5>
+          <small>Customer</small>
+        </div>
+      </div>
+      <p class="pt-4">there are many variations of bank, but i haven't come accros a bank that gives better banking
+        services as Unlimited bank</p>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 animated fadeInUp">
+    <div class="review p-4">
+      <div class="person">
+        <img src="./images/review2.jpg" alt="">
+        <div class="text ms-3">
+          <h5 class="mb-0 ml-3">Rita Chukwu</h5>
+          <small>Customer</small>
+        </div>
+      </div>
+      <p class="pt-4">there are many variations of bank, but i haven't come accros a bank that gives better banking
+        services as Unlimited bank</p>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 animated zoomIn">
+    <div class="review p-4">
+      <div class="person">
+        <img src="./images/review6.jpg" alt="">
+        <div class="text ms-3">
+          <h5 class="mb-0 ml-3">Williams Efe</h5>
+          <small>Customer</small>
+        </div>
+      </div>
+      <p class="pt-4">there are many variations of bank, but i haven't come accros a bank that gives better banking
+        services as Unlimited bank</p>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 animated zoomIn">
+    <div class="review p-4">
+      <div class="person">
+        <img src="./images/review4.jpg" alt="">
+        <div class="text ms-3">
+          <h5 class="mb-0 ml-3">Johnson Abubakka</h5>
+          <small>Customer</small>
+        </div>
+      </div>
+      <p class="pt-4">there are many variations of bank, but i haven't come accros a bank that gives better banking
+        services as Unlimited bank</p>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 animated zoomIn">
+    <div class="review p-4">
+      <div class="person">
+        <img src="./images/review3.jpg" alt="">
+        <div class="text ms-3">
+          <h5 class="mb-0 ml-3">Joy Gorge</h5>
+          <small>Customer</small>
+        </div>
+      </div>
+      <p class="pt-4">there are many variations of bank, but i haven't come accros a bank that gives better banking
+        services as Unlimited bank</p>
+      <div class="stars">
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+        <i class='bx bxs-star'></i>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+</section>
+<!-- blog -->
+<section id="blog" class="text-center bg-warning">
+<div class="container">
+<div class="row">
+<div class="col-12 section-intro text-center animated fadeInUp">
+<h4>Our Blog Posts</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et soluta reiciendis nobis praesentium similique debitis distinctio aspernatur ea totam illo?</p>
+</div>
+</div>
+<div class="row text-start p-4">
+  <div class="col-md-4 animated slideInRight">
+    <img src="./images/slide4.jpg" alt="" width="330px" height="220px">
+    <div class="mt-4">
+      <small>posted in <a href="#">Bank Services</a>, 12 July 2022</small>
+      <h5 class="mt-1 mb2"><a href="#">Bank Services in 2022</a></h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab ea provident inventore nostrum molestias maiores eligendi laboriosam dolor.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4 animated slideInRight">
+    <img src="./images/slide44.jpg" alt="" width="330px" height="220">
+    <div class="mt-4">
+      <small>posted in <a href="#">Bank Services</a>, 12 July 2022</small>
+      <h5 class="mt-1 mb2"><a href="#">Bank Services in 2022</a></h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab ea provident inventore nostrum molestias
+        maiores eligendi laboriosam dolor.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4 animated slideInRight">
+    <img src="./images/slide444.jpg" alt="" width="330px" height="220px">
+    <div class="mt-4">
+      <small>posted in <a href="#">Bank Services</a>, 12 July 2022</small>
+      <h5 class="mt-1 mb2"><a href="#">Bank Services in 2022</a></h5>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ab ea provident inventore nostrum molestias
+        maiores eligendi laboriosam dolor.</p>
+    </div>
+  </div>
+
+</div>
+  </div>
+</section>
+<!-----Contact----->
+<section id="contact" class="bg-cover text-white">
+<div class="overlay"></div>
+<div class="container">
+  <div class="row">
+    <div class="col-12 section-intro text-center animated slideInLeft">
+   <h1>Get in Touch</h1>
+   <div class="divider"></div>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis architecto illum eiushdysksjsskeh hwywwehewh hff</p>   
+    </div>
+  </div>
+  <div class="row">
+<div class="col-md-8 mx-auto animated slideInRight">
+<form action="8" class="row g-4">
+  <div class="form-group col-md-6">
+    <input type="text" class="form-control" placeholder="full name">
+  </div>
+  <div class="form-group col-md-6">
+    <input type="email" class="form-control" placeholder="Email address">
+  </div>
+  <div class="form-group col-md-12">
+    <input type="text" class="form-control" placeholder="Subject">
+  </div>
+  <div class="form-group col-md-12">
+    <textarea name="" id="" cols="30" rows="4" class="form-control" placeholder="Message"></textarea>
+  </div>
+  <div class="text-center">
+    <button class="btn btn-main animated slideInup" type="submit">Send Message</button>
+  </div>
+</form>
+</div>
+  </div>
+</div>
+</section>
+<!----Footer------>
+<footer class="bg-dark text-white pt-5 pb-4 animated fadeInUp">
+  <div class="container text-center text-md-left">
+    <div class="row text-center text-md-left">
+      <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Unlimited Bank</h5>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">About Us</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Blog</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Privacy Policy</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Terms and Conditions</a>
+        </p>
+      </div>
+      <!-- <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Unlimited Bank</h5>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptatum culpa accusantium expedita ipsum dolorem aliquam officiis</p>
+      </div> -->
+
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Products</h5>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Retail Banking</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Business Banking</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Cards</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Careers</a>
+        </p>
+      </div>
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Useful Links</h5>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Your Accounts</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Become an Affiliates</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Security</a>
+        </p>
+        <p>
+          <a href="#" class="text-white" style="text-decoration:none;">Help</a>
+        </p>
+      </div>
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+        <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contact</h5>
+        <p>
+          <i class='bx bxs-location-plus mr-3'>Lagos,Nigeria</i>
+        </p>
+        <p>
+          <i class="bx bxs-phone mr-3">+234-813-158-4261</i>
+        </p>
+        <p>
+          <i class="bx bxs-envelope mr-3">Support@Unlimitedbank.com</i>
+        </p>
+        </div>
+    </div>
+<hr class="mb-4">
+<div class="row align-items-center">
+  <div col-md-7 col-lg-8>
+    <p>copyright @2022 All rights reserved by:
+      <a href="#" style="text-decoration: none;">
+        <strong class="text-warning">Unlimited Bank</strong>
+      </a>
+    </p>
+  </div>
+  <div class="col-md-5 col-lg-4">
+    <div class="text-center text-md-right">
+      <ul class="list-unstyled list-inline">
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class='bx bxl-facebook-circle'></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class='bx bxl-whatsapp'></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class='bx bxl-twitter'></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class='bx bxl-linkedin-square'></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class='bx bxl-instagram'></i></a>
+        </li>
+        <li class="list-inline-item">
+          <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><img src="./images/playstore.png" alt="" width="120px" height="80px"></a>
+        </li>
+<li class="list-inline-item">
+<a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><img src="./images/"
+alt=""></a>
+</li>
+      </ul>
+    </div>
+  </div>
+</div>
+  </div>
+</footer>
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<!-- jquery owl carousel -->
+<!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/owlcarousel2/2.3.4/owl.carousel.min.js"></script> -->
+
+
+----counter script----->
+<script src="jquery.counterup.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script> -->
+<script>
+jQuery(document).ready(function( $ )
+{
+    $('.counter').counterUp({
+    delay: 10,
+    time: 1000
+    });
+});
+</script>
+
+
+</body>
+</html>
